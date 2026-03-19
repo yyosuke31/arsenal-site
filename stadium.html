@@ -3,173 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arsenal FC - スタジアム</title>
+  <title>Arsenal FC — Stadium</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="logo">
-        <span class="cannon">&#9918;</span> ARSENAL FC
-      </a>
-      <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="メニュー">&#9776;</button>
+      <a href="index.html" class="logo">Arsenal FC</a>
+      <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html">ホーム</a></li>
-          <li><a href="history.html">歴史</a></li>
-          <li><a href="players.html">選手</a></li>
-          <li><a href="stadium.html" class="active">スタジアム</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="players.html">Players</a></li>
+          <li><a href="stadium.html" class="active">Stadium</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <h1>エミレーツ・スタジアム</h1>
-    <p>60,704人の情熱が渦巻く、アーセナルの聖地。</p>
+  <div class="page-header">
+    <div class="container">
+      <h1>Stadium</h1>
+      <p class="lead">Hornsey Road, London N7。6万人分のため息と歓声が詰まった場所。</p>
+    </div>
+  </div>
+  <div class="page-header-accent"></div>
+
+  <!-- 没入的な導入: 全幅画像 + 体験としてのテキスト -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="img-placeholder img-placeholder--hero">
+        <img src="https://placehold.co/1100x550/1A1A1A/666666?text=Emirates+Stadium+%E2%80%94+Matchday+Atmosphere" alt="エミレーツ・スタジアム 試合日">
+      </div>
+    </div>
   </section>
 
-  <!-- Overview -->
-  <section class="section section-light">
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="prose">
+        <p>ピカデリー線のArsenal駅を出ると、空気が変わる。赤いマフラーを巻いた人たちが、同じ方向に歩いている。角を曲がると、巨大な銀色の外壁が見えてくる。エミレーツ・スタジアム。</p>
+        <p>キックオフの2時間前から、スタジアム周辺は人で溢れる。Drayton Parkのパブで一杯ひっかけてから入る常連もいるし、Armoury（公式ショップ）で新作ユニフォームを眺める家族連れもいる。</p>
+        <p>席に着くと、ピッチの緑が目に飛び込んでくる。60,704人分の座席が四方を囲むボウル型の構造は、音を反響させる。試合が始まれば、その意味がわかる。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 非対称: スペック情報（テキスト重め + サイドに数字） -->
+  <section class="section--tight section--dark">
     <div class="container">
-      <div class="stadium-feature">
-        <div class="stadium-img">
-          <img src="https://placehold.co/600x350/EF0107/FFFFFF?text=Emirates+Stadium+Exterior" alt="エミレーツ・スタジアム外観">
+      <div class="split split--wide-left split--center">
+        <div>
+          <span class="overline">Specifications</span>
+          <h2 class="heading-lg">エミレーツの素顔</h2>
+          <div class="red-line" style="margin-bottom: 24px;"></div>
+          <table class="info-table">
+            <tr><th>開場</th><td>2006年7月22日</td></tr>
+            <tr><th>収容人数</th><td>60,704席</td></tr>
+            <tr><th>ピッチ</th><td>105m × 68m（天然芝 + ハイブリッド）</td></tr>
+            <tr><th>構造</th><td>4層スタンド、ボウル型</td></tr>
+            <tr><th>建設費</th><td>約3億9,000万ポンド</td></tr>
+            <tr><th>設計</th><td>HOK Sport（現 Populous）</td></tr>
+            <tr><th>命名権</th><td>エミレーツ航空（2004–2028契約）</td></tr>
+          </table>
         </div>
-        <div class="stadium-text">
-          <h3>ホームの誇り</h3>
-          <p>エミレーツ・スタジアムは2006年に開場した、イングランドで4番目に大きなサッカースタジアムです。それまでのホームであったハイベリーから移転し、より多くのファンに試合を楽しんでもらえるようになりました。</p>
-          <p>モダンな設計と充実した施設を備え、プレミアリーグの試合だけでなく、国際試合やコンサートなどのイベントにも使用されています。</p>
-        </div>
-      </div>
-
-      <div class="stadium-feature">
-        <div class="stadium-img">
-          <img src="https://placehold.co/600x350/063672/FFFFFF?text=Stadium+Interior" alt="スタジアム内部">
-        </div>
-        <div class="stadium-text">
-          <h3>スタジアムスペック</h3>
-          <p>収容人数：60,704人。ピッチサイズは105m × 68mの国際基準サイズ。4層構造のスタンドが360度ピッチを取り囲み、どの座席からも迫力ある試合を楽しめます。</p>
-          <p>150以上のVIPボックス席、ミュージアム、メガストア、レストランなど、試合日以外にも楽しめる施設が充実しています。</p>
-        </div>
-      </div>
-
-      <div class="stadium-feature">
-        <div class="stadium-img">
-          <img src="https://placehold.co/600x350/D4A843/1A1A1A?text=Highbury+Legacy" alt="ハイベリーの遺産">
-        </div>
-        <div class="stadium-text">
-          <h3>ハイベリーの遺産</h3>
-          <p>1913年から2006年まで、アーセナルのホームだったハイベリー・スタジアム。「フットボールの聖堂」として愛された旧スタジアムは、現在は住宅として再開発されています。</p>
-          <p>アールデコ調のイースト・スタンドのファサードは保存され、クラブの歴史の象徴として今も残っています。</p>
+        <div class="img-placeholder img-placeholder--square">
+          <img src="https://placehold.co/500x500/063672/FFFFFF?text=Aerial+View" alt="スタジアム航空写真">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Stats -->
-  <section class="section section-dark">
+  <!-- ハイベリーの話: historyページと異なる切り口で -->
+  <section class="section">
     <div class="container">
-      <h2 class="section-title">スタジアムデータ</h2>
-      <div class="stats-bar">
-        <div class="stat-item">
-          <h3>60,704</h3>
-          <p>収容人数</p>
+      <div class="split split--wide-right split--center">
+        <div class="img-placeholder img-placeholder--tall">
+          <img src="https://placehold.co/440x580/C5A55A/1A1A1A?text=Highbury%0AEast+Stand%0A1936" alt="ハイベリー イースト・スタンド">
         </div>
-        <div class="stat-item">
-          <h3>2006</h3>
-          <p>開場年</p>
-        </div>
-        <div class="stat-item">
-          <h3>3.9万㎡</h3>
-          <p>総面積</p>
-        </div>
-        <div class="stat-item">
-          <h3>£3.9億</h3>
-          <p>建設費</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tour & Access -->
-  <section class="section section-light">
-    <div class="container">
-      <h2 class="section-title">スタジアムツアー & アクセス</h2>
-      <p class="section-subtitle">ガナーズの本拠地を体験しよう。</p>
-      <div class="card-grid">
-        <div class="card">
-          <div class="card-img">
-            <img src="https://placehold.co/600x400/EF0107/FFFFFF?text=Stadium+Tour" alt="スタジアムツアー">
+        <div>
+          <span class="overline">Before Emirates</span>
+          <h2 class="heading-md">ハイベリーという記憶</h2>
+          <div class="red-line"></div>
+          <div class="prose" style="margin-top: 16px;">
+            <p>1913年から2006年まで。ハイベリーは「フットボールの聖堂」と呼ばれた。クロード・ウォーターロー・ファーガソンが設計したアールデコ調のイースト・スタンドは、1936年に完成。スタジアムというより、建築作品だった。</p>
+            <p>38,419人しか入れない小さな箱。だからこそ、相手チームを威圧する雰囲気があった。最終シーズン、スタンドのひとつひとつに別れを告げるように、ファンは静かに立ち上がった。</p>
+            <p>現在、イースト・スタンドのファサードは保存され、敷地は高級住宅に生まれ変わっている。ピッチがあった場所は庭園になった。</p>
           </div>
-          <div class="card-body">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 実用情報: コンパクトにまとめる -->
+  <section class="section--tight section--white">
+    <div class="container">
+      <div class="split">
+        <div class="aside-box">
+          <h3>アクセス</h3>
+          <p><strong>Arsenal駅</strong>（ピカデリー線） — 徒歩4分</p>
+          <p><strong>Holloway Road駅</strong>（ピカデリー線） — 徒歩8分</p>
+          <p><strong>Finsbury Park駅</strong>（ピカデリー / ヴィクトリア線） — 徒歩12分</p>
+          <p style="margin-top: 12px; font-size: 0.8rem;">試合日はArsenal駅が入場専用になることがある。帰りはHolloway RoadかFinsbury Parkから。車での来場は非推奨（周辺は駐車制限区域）。</p>
+        </div>
+        <div>
+          <div class="aside-box">
             <h3>スタジアムツアー</h3>
-            <p>選手用ロッカールーム、ピッチサイド、プレスルームなど、普段は立ち入れないエリアを巡るガイドツアー。試合日でなくてもアーセナルの魅力を体感できます。</p>
+            <p>所要時間: 約90分</p>
+            <p>ロッカールーム、選手トンネル、ピッチサイド、プレスルームを巡る。ツアーガイドはクラブの歴史に詳しい地元スタッフ。</p>
+            <p style="font-size: 0.8rem; margin-top: 8px;">※試合日・前日は催行なし</p>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-img">
-            <img src="https://placehold.co/600x400/063672/FFFFFF?text=Museum" alt="アーセナル・ミュージアム">
-          </div>
-          <div class="card-body">
-            <h3>アーセナル・ミュージアム</h3>
-            <p>クラブの130年以上の歴史を物語る貴重な展示品の数々。トロフィー、ユニフォーム、記念品などを間近で見ることができます。</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-img">
-            <img src="https://placehold.co/600x400/D4A843/1A1A1A?text=Access+Map" alt="アクセス情報">
-          </div>
-          <div class="card-body">
-            <h3>アクセス情報</h3>
-            <p>最寄り駅はピカデリー線のArsenal駅（徒歩約5分）。Holloway Road駅、Finsbury Park駅からもアクセス可能です。試合日は周辺に駐車場制限がかかるため、公共交通機関のご利用をお勧めします。</p>
+          <div class="aside-box">
+            <h3>ミュージアム</h3>
+            <p>クラブの140年を追体験できるインタラクティブ展示。1930年代のチャップマン時代のユニフォームから、2004年のインヴィンシブルズのトロフィーまで。</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- 地図プレースホルダー -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="img-placeholder" style="aspect-ratio: 3/1;">
+        <img src="https://placehold.co/1100x370/E2DDD5/777777?text=Map+%E2%80%94+Emirates+Stadium%2C+Hornsey+Rd%2C+London+N7+7AJ" alt="地図">
+      </div>
+    </div>
+  </section>
+
   <footer class="site-footer">
-    <div class="footer-grid">
+    <div class="footer-inner">
       <div class="footer-col">
-        <h4>Arsenal FC</h4>
+        <h4>Site</h4>
         <ul>
-          <li><a href="index.html">ホーム</a></li>
-          <li><a href="history.html">クラブの歴史</a></li>
-          <li><a href="players.html">選手紹介</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="players.html">Players</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>スタジアム</h4>
+        <h4>More</h4>
         <ul>
-          <li><a href="stadium.html">エミレーツ・スタジアム</a></li>
-          <li><a href="stadium.html">アクセス</a></li>
-          <li><a href="stadium.html">スタジアムツアー</a></li>
+          <li><a href="stadium.html">Stadium</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>お問い合わせ</h4>
+        <h4>External</h4>
         <ul>
-          <li><a href="contact.html">ファンクラブ</a></li>
-          <li><a href="contact.html">お問い合わせフォーム</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>SNS</h4>
-        <ul>
-          <li><a href="#">Twitter / X</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Arsenal.com</a></li>
+          <li><a href="#">Premier League</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Arsenal FC Fan Site. This is a fan-made website and is not affiliated with Arsenal Football Club.</p>
+      &copy; 2026 Arsenal FC Fan Site. Not affiliated with Arsenal Football Club.
     </div>
   </footer>
 

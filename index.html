@@ -3,147 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arsenal FC - ホーム</title>
+  <title>Arsenal FC — North London Forever</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="logo">
-        <span class="cannon">&#9918;</span> ARSENAL FC
-      </a>
-      <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="メニュー">&#9776;</button>
+      <a href="index.html" class="logo">Arsenal FC</a>
+      <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html" class="active">ホーム</a></li>
-          <li><a href="history.html">歴史</a></li>
-          <li><a href="players.html">選手</a></li>
-          <li><a href="stadium.html">スタジアム</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="players.html">Players</a></li>
+          <li><a href="stadium.html">Stadium</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero: 左下寄せ、大きなタイポグラフィ -->
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
-      <h1>Victoria Concordia Crescit</h1>
-      <p>勝利は調和から生まれる — 1886年創設、北ロンドンの誇りアーセナルFCの公式ファンサイトへようこそ。</p>
-      <a href="history.html" class="btn btn-primary">クラブの歴史を見る</a>
+      <h1>Victoria<br>Concordia<br>Crescit</h1>
+      <p class="lead">勝利は調和から生まれる。1886年、ウーリッジの工場労働者たちが始めたクラブは、140年近い時を経て、いまも北ロンドンで息づいている。</p>
     </div>
   </section>
 
-  <!-- Stats -->
-  <section class="section section-dark">
+  <!-- イントロ: 散文的なテキストブロック。カードなし。 -->
+  <section class="section">
+    <div class="container container--narrow">
+      <span class="overline">About This Site</span>
+      <h2 class="heading-lg">赤と白に心を奪われた人のために</h2>
+      <div class="red-line"></div>
+      <div class="prose" style="margin-top: 24px;">
+        <p>ここは、アーセナルを追いかけるすべての人のためのファンサイトだ。土曜の昼にキックオフを待つ緊張も、アンリが流し込んだゴールへの興奮も、トロフィーから遠ざかった長い年月の歯がゆさも — このクラブを好きな人なら知っている感覚がある。</p>
+        <p>クラブの歴史、記憶に残る選手、エミレーツの空気感。そういうものを、できるだけ丁寧に残しておきたいと思った。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 非対称レイアウト: インヴィンシブルズをフィーチャー -->
+  <section class="section--tight section--white">
     <div class="container">
-      <div class="stats-bar">
-        <div class="stat-item">
-          <h3>13</h3>
-          <p>リーグ優勝</p>
+      <div class="split split--wide-left split--center">
+        <div class="img-placeholder img-placeholder--wide">
+          <img src="https://placehold.co/800x450/DB0007/FFFFFF?text=THE+INVINCIBLES+2003-04" alt="インヴィンシブルズ 2003-04">
         </div>
-        <div class="stat-item">
-          <h3>14</h3>
-          <p>FAカップ優勝</p>
-        </div>
-        <div class="stat-item">
-          <h3>1886</h3>
-          <p>クラブ創設</p>
-        </div>
-        <div class="stat-item">
-          <h3>60,704</h3>
-          <p>スタジアム収容人数</p>
+        <div>
+          <span class="overline">Defining Moment</span>
+          <h2 class="heading-md">2003-04 無敗優勝</h2>
+          <div class="red-line"></div>
+          <p style="margin-top: 16px; color: var(--gray); font-size: 0.9rem;">38試合を戦い、一度も負けなかった。アンリ、ベルカンプ、ヴィエラ、ピレス。あのシーズンのアーセナルは、プレミアリーグの歴史そのものを書き換えた。26勝12分0敗。「インヴィンシブルズ」の称号は、伊達ではない。</p>
+          <a href="history.html" style="display: inline-block; margin-top: 16px; font-size: 0.8rem; color: var(--red); font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">歴史を読む &rarr;</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features -->
-  <section class="section section-light">
+  <!-- 数字: 横並び。dark背景で重みを出す -->
+  <section class="section--tight section--dark">
     <div class="container">
-      <h2 class="section-title">アーセナルを知る</h2>
-      <p class="section-subtitle">北ロンドンの名門クラブの魅力をさまざまな角度からご紹介します。</p>
-      <div class="card-grid">
-        <a href="history.html" class="card">
-          <div class="card-img">
-            <img src="https://placehold.co/600x400/EF0107/FFFFFF?text=HISTORY" alt="クラブの歴史">
-          </div>
-          <div class="card-body">
-            <h3>クラブの歴史</h3>
-            <p>1886年の創設から現在まで、数々の栄光に彩られたアーセナルの歩みをたどります。</p>
+      <div class="stats-strip">
+        <dl><dt>13</dt><dd>League Titles</dd></dl>
+        <dl><dt>14</dt><dd>FA Cups</dd></dl>
+        <dl><dt>1886</dt><dd>Founded</dd></dl>
+        <dl><dt>60,704</dt><dd>Seats</dd></dl>
+        <dl><dt>49</dt><dd>Unbeaten Run</dd></dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ナビゲーションカード: 2列で非均等な見せ方 -->
+  <section class="section">
+    <div class="container">
+      <span class="overline">Explore</span>
+      <h2 class="heading-lg" style="margin-bottom: 30px;">もっと深く</h2>
+      <div class="cards-duo">
+        <a href="players.html" class="card-v">
+          <img src="https://placehold.co/600x380/063672/FFFFFF?text=LEGENDS+%26+STARS" alt="選手">
+          <div class="card-v-body">
+            <h3 class="heading-sm">選手・レジェンド</h3>
+            <p>アンリの228ゴール、アダムスの19年間。記憶に刻まれた男たちの話。</p>
           </div>
         </a>
-        <a href="players.html" class="card">
-          <div class="card-img">
-            <img src="https://placehold.co/600x400/063672/FFFFFF?text=PLAYERS" alt="選手紹介">
-          </div>
-          <div class="card-body">
-            <h3>選手・レジェンド</h3>
-            <p>クラブの歴史を築いた伝説の選手たちと、現在のスター選手をご紹介します。</p>
-          </div>
-        </a>
-        <a href="stadium.html" class="card">
-          <div class="card-img">
-            <img src="https://placehold.co/600x400/D4A843/1A1A1A?text=STADIUM" alt="スタジアム">
-          </div>
-          <div class="card-body">
-            <h3>エミレーツ・スタジアム</h3>
-            <p>60,704人を収容する壮大なホームスタジアムの魅力をお伝えします。</p>
+        <a href="stadium.html" class="card-v">
+          <img src="https://placehold.co/600x380/1A1A1A/AAAAAA?text=EMIRATES+STADIUM" alt="スタジアム">
+          <div class="card-v-body">
+            <h3 class="heading-sm">エミレーツ・スタジアム</h3>
+            <p>Arsenal駅を出て徒歩5分。6万人が赤く染まるあの場所のこと。</p>
           </div>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section section-red">
-    <div class="container" style="text-align: center;">
-      <h2 class="section-title">ガナーズファミリーに参加しよう</h2>
-      <p class="section-subtitle" style="color: rgba(255,255,255,0.85);">最新ニュースやイベント情報をお届けします。ファンクラブへの参加もこちらから。</p>
-      <a href="contact.html" class="btn btn-outline">お問い合わせ</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="footer-grid">
+    <div class="footer-inner">
       <div class="footer-col">
-        <h4>Arsenal FC</h4>
+        <h4>Site</h4>
         <ul>
-          <li><a href="index.html">ホーム</a></li>
-          <li><a href="history.html">クラブの歴史</a></li>
-          <li><a href="players.html">選手紹介</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="players.html">Players</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>スタジアム</h4>
+        <h4>More</h4>
         <ul>
-          <li><a href="stadium.html">エミレーツ・スタジアム</a></li>
-          <li><a href="stadium.html">アクセス</a></li>
-          <li><a href="stadium.html">スタジアムツアー</a></li>
+          <li><a href="stadium.html">Stadium</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>お問い合わせ</h4>
+        <h4>External</h4>
         <ul>
-          <li><a href="contact.html">ファンクラブ</a></li>
-          <li><a href="contact.html">お問い合わせフォーム</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>SNS</h4>
-        <ul>
-          <li><a href="#">Twitter / X</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Arsenal.com</a></li>
+          <li><a href="#">Premier League</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Arsenal FC Fan Site. This is a fan-made website and is not affiliated with Arsenal Football Club.</p>
+      &copy; 2026 Arsenal FC Fan Site. Not affiliated with Arsenal Football Club.
     </div>
   </footer>
 

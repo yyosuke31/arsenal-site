@@ -3,105 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arsenal FC - お問い合わせ</title>
+  <title>Arsenal FC — Contact</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="logo">
-        <span class="cannon">&#9918;</span> ARSENAL FC
-      </a>
-      <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="メニュー">&#9776;</button>
+      <a href="index.html" class="logo">Arsenal FC</a>
+      <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html">ホーム</a></li>
-          <li><a href="history.html">歴史</a></li>
-          <li><a href="players.html">選手</a></li>
-          <li><a href="stadium.html">スタジアム</a></li>
-          <li><a href="contact.html" class="active">お問い合わせ</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="players.html">Players</a></li>
+          <li><a href="stadium.html">Stadium</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <h1>お問い合わせ</h1>
-    <p>ファンクラブへの参加やご質問など、お気軽にご連絡ください。</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="section section-light">
+  <div class="page-header">
     <div class="container">
-      <div class="contact-grid">
+      <h1>Contact</h1>
+      <p class="lead">質問でも、感想でも、ただ話したいだけでも。</p>
+    </div>
+  </div>
+  <div class="page-header-accent"></div>
 
-        <!-- Form -->
+  <!-- メインコンテンツ: フォーム（左寄せで広め） + サイドに情報（狭め） -->
+  <section class="section">
+    <div class="container">
+      <div class="split split--wide-left">
+
         <div>
-          <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">メッセージを送る</h2>
-          <form onsubmit="event.preventDefault(); alert('送信ありがとうございます！（デモ）');">
+          <span class="overline">Message</span>
+          <h2 class="heading-md" style="margin-bottom: 24px;">お問い合わせフォーム</h2>
+          <form onsubmit="event.preventDefault(); alert('送信しました（デモ）');">
             <div class="form-group">
-              <label for="name">お名前</label>
-              <input type="text" id="name" placeholder="山田 太郎" required>
+              <label for="name">名前</label>
+              <input type="text" id="name" placeholder="Your name" required>
             </div>
             <div class="form-group">
               <label for="email">メールアドレス</label>
-              <input type="email" id="email" placeholder="example@email.com" required>
+              <input type="email" id="email" placeholder="you@example.com" required>
             </div>
             <div class="form-group">
               <label for="subject">件名</label>
               <select id="subject">
                 <option value="">選択してください</option>
                 <option value="fanclub">ファンクラブについて</option>
-                <option value="tickets">チケットについて</option>
-                <option value="tour">スタジアムツアーについて</option>
-                <option value="shop">グッズ・ショップについて</option>
-                <option value="other">その他</option>
+                <option value="tickets">チケット関連</option>
+                <option value="tour">スタジアムツアー</option>
+                <option value="general">その他・一般</option>
               </select>
             </div>
             <div class="form-group">
               <label for="message">メッセージ</label>
-              <textarea id="message" placeholder="お問い合わせ内容をご記入ください..." required></textarea>
+              <textarea id="message" placeholder="何でもどうぞ。" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="background: var(--arsenal-red); color: white;">送信する</button>
+            <button type="submit" class="btn btn--red">送信する</button>
           </form>
         </div>
 
-        <!-- Info -->
         <div>
-          <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">ファンクラブ案内</h2>
-
-          <div class="contact-info-card">
-            <h3>ファンクラブ会員特典</h3>
-            <p>&#10003; ホームゲームチケットの優先購入権</p>
-            <p>&#10003; 公式グッズの会員割引（10%OFF）</p>
-            <p>&#10003; 限定メンバーズカードの発行</p>
-            <p>&#10003; 会員限定イベントへの招待</p>
-            <p>&#10003; 月刊デジタルマガジンの配信</p>
+          <div class="aside-box">
+            <h3>連絡先</h3>
+            <p>info@arsenal-fan-example.com</p>
+            <p>+44 (0)20 7619 5003</p>
+            <p style="margin-top: 10px;">Emirates Stadium<br>Hornsey Rd, London N7 7AJ</p>
           </div>
 
-          <div class="contact-info-card">
-            <h3>連絡先情報</h3>
-            <p><span class="icon">&#9993;</span> info@arsenal-fan-example.com</p>
-            <p><span class="icon">&#9742;</span> +44 (0)20 7619 5003</p>
-            <p><span class="icon">&#9873;</span> Emirates Stadium, Hornsey Rd,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;London N7 7AJ, UK</p>
-          </div>
-
-          <div class="contact-info-card">
+          <div class="aside-box">
             <h3>営業時間</h3>
-            <p>月曜日 - 金曜日: 9:00 - 18:00</p>
-            <p>土曜日: 10:00 - 16:00（試合日は変動あり）</p>
-            <p>日曜日・祝日: 休業</p>
+            <p>月–金 &ensp; 9:00 – 18:00</p>
+            <p>土 &ensp;&ensp;&ensp; 10:00 – 16:00</p>
+            <p style="font-size: 0.8rem; margin-top: 6px;">※試合日は変動あり / 日曜・祝日休</p>
           </div>
 
-          <div class="contact-info-card">
+          <div class="aside-box">
             <h3>SNS</h3>
-            <p><a href="#" style="color: var(--arsenal-red);">Twitter / X</a></p>
-            <p><a href="#" style="color: var(--arsenal-red);">Instagram</a></p>
-            <p><a href="#" style="color: var(--arsenal-red);">YouTube</a></p>
-            <p><a href="#" style="color: var(--arsenal-red);">Facebook</a></p>
+            <p><a href="#" style="color: var(--red);">Twitter / X</a></p>
+            <p><a href="#" style="color: var(--red);">Instagram</a></p>
+            <p><a href="#" style="color: var(--red);">YouTube</a></p>
           </div>
         </div>
 
@@ -109,54 +94,59 @@
     </div>
   </section>
 
-  <!-- Map Placeholder -->
-  <section class="section">
+  <!-- ファンクラブ案内: 独立したセクションとして切り出す -->
+  <section class="section--tight section--dark">
     <div class="container">
-      <h2 class="section-title">アクセスマップ</h2>
-      <p class="section-subtitle">エミレーツ・スタジアムへのアクセス</p>
-      <div style="width: 100%; height: 400px; background: var(--light-gray); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--gray);">
-        <img src="https://placehold.co/1200x400/E0E0E0/666666?text=Google+Maps+Embed+Area" alt="地図プレースホルダー" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+      <div class="split split--wide-right split--center">
+        <div>
+          <span class="overline">Membership</span>
+          <h2 class="heading-lg">ファンクラブ</h2>
+          <div class="red-line" style="margin-bottom: 16px;"></div>
+          <div class="prose">
+            <p>年会費を払って得るのは、チケットの優先購入権だけじゃない。同じクラブを好きな人たちとの接点だ。</p>
+            <p>試合観戦の手配や情報交換、シーズン前のミートアップ。一人で追いかけるのもいいけど、仲間がいると、また違う。</p>
+          </div>
+        </div>
+        <div>
+          <table class="info-table">
+            <tr><th>チケット</th><td>ホームゲームの優先購入権</td></tr>
+            <tr><th>グッズ</th><td>公式ショップ 10% OFF</td></tr>
+            <tr><th>カード</th><td>メンバーズカード発行</td></tr>
+            <tr><th>イベント</th><td>会員限定の観戦イベント・交流会</td></tr>
+            <tr><th>情報</th><td>月刊デジタルマガジン配信</td></tr>
+          </table>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="footer-grid">
+    <div class="footer-inner">
       <div class="footer-col">
-        <h4>Arsenal FC</h4>
+        <h4>Site</h4>
         <ul>
-          <li><a href="index.html">ホーム</a></li>
-          <li><a href="history.html">クラブの歴史</a></li>
-          <li><a href="players.html">選手紹介</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="players.html">Players</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>スタジアム</h4>
+        <h4>More</h4>
         <ul>
-          <li><a href="stadium.html">エミレーツ・スタジアム</a></li>
-          <li><a href="stadium.html">アクセス</a></li>
-          <li><a href="stadium.html">スタジアムツアー</a></li>
+          <li><a href="stadium.html">Stadium</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>お問い合わせ</h4>
+        <h4>External</h4>
         <ul>
-          <li><a href="contact.html">ファンクラブ</a></li>
-          <li><a href="contact.html">お問い合わせフォーム</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>SNS</h4>
-        <ul>
-          <li><a href="#">Twitter / X</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Arsenal.com</a></li>
+          <li><a href="#">Premier League</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Arsenal FC Fan Site. This is a fan-made website and is not affiliated with Arsenal Football Club.</p>
+      &copy; 2026 Arsenal FC Fan Site. Not affiliated with Arsenal Football Club.
     </div>
   </footer>
 
